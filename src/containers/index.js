@@ -1,0 +1,5 @@
+export { default as Blog } from './blog/Blog'
+export { default as Restaurantes } from './restaurantes/Restaurantes'
+export { default as Footer } from './footer/Footer'
+export { default as Header } from './header/Header'
+export { default as Carrusel } from './carrusel/Carrusel'

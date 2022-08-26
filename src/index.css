@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&family=Josefin+Sans:ital,wght@0,200;0,400;0,700;1,400&family=Poppins:wght@400;500;700&family=Stoke&display=swap');
+
+
+
+:root {
+  --font-family: 'DynaPuff', cursive;
+  --font-family_text: 'Josefin Sans', sans-serif;
+
+  --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+  
+  --color-bg: rgba(255, 250, 240, 1);
+  --color-footer : #ce480f;
+  --color-blog: #ffc7a1;
+  --color-text: #dd8181;
+  --color-subtext: #FF8A71;
+  --color-red:rgb(207, 41, 41) ;
+}

@@ -1,0 +1,12 @@
+.contenedor-prov{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 10rem;
+}
+
+.contenedor-prov p{
+    font-size: 5rem;
+    font-weight: bold;
+    color: var(--color-red);
+}
