@@ -3,7 +3,6 @@ import { useState } from "react";
 const ItemCount = ({ stock, initial, onAdd }) => {
   const [count, setCount] = useState(initial);
   const [stockState, setStockState] = useState(stock);
-  const carrito = useState(0);
   const aumentar = () => {
     if (count < stock) {
       setCount(count + 1);

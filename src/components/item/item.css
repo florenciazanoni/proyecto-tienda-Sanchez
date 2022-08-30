@@ -1,0 +1,14 @@
+ .locales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+
+.locales img{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
