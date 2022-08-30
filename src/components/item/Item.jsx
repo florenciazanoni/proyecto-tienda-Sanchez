@@ -4,7 +4,7 @@ import "./item.css";
 const Item = ({ data }) => {
   const { nombre, img, calificacion } = data;
   return (
-    <div className="locales" key={data.name}>
+    <div className="locales-indiv" key={data.name}>
       {" "}
       <img src={img} alt=""></img>
       <h5>{nombre}</h5>
