@@ -8,7 +8,7 @@ const Item = ({ data }) => {
       {" "}
       <img src={img} alt=""></img>
       <h5>{nombre}</h5>
-      <p>{calificacion}</p>
+      <p>{calificacion}★</p>
     </div>
   );
 };

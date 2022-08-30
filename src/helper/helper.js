@@ -3,6 +3,7 @@ import ImgMcdonalds from "../assets/imgs/mcdonalds.jpg";
 import ImgStarbucks from "../assets/imgs/starbucks.jpg";
 import ImgPizzaH from "../assets/imgs/pizzahut.jpg";
 import ImgSubway from "../assets/imgs/subway.jpg";
+import ImgBembos from "../assets/imgs/bembos.jpg";
 
 const locales = [
     {
@@ -25,8 +26,8 @@ const locales = [
     },
     {
         "id":4,
-        "nombre":"Pizza Hut",
-        "img":ImgPizzaH,
+        "nombre":"Bembos",
+        "img":ImgBembos,
         "calificacion":3,
     },
     {
