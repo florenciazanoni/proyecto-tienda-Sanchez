@@ -6,11 +6,11 @@
     width: 100%;
     height: 100%;
 }
-.titulo{
+/* .titulo{
     position: absolute;
     
 }
-
+ */
 .contenedor{
     display: flex;
     justify-content: space-between;
