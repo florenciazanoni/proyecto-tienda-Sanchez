@@ -1,48 +1,43 @@
-import ImgDunkin from "../assets/imgs/dunkin.jpg";
-import ImgMcdonalds from "../assets/imgs/mcdonalds.jpg";
-import ImgStarbucks from "../assets/imgs/starbucks.jpg";
-import ImgPizzaH from "../assets/imgs/pizzahut.jpg";
-import ImgSubway from "../assets/imgs/subway.jpg";
-import ImgBembos from "../assets/imgs/bembos.jpg";
+import ImgImperial from "../assets/imgs/mate-imperial.jpg";
+import ImgPampa from "../assets/imgs/mate-pampa.jpg";
+import ImgCalabaza from "../assets/imgs/mate-calabaza.jpg";
 
-const locales = [
+const mates = [
     {
         "id":1,
-        "nombre":"Dunkin Donuts",
-        "img":ImgDunkin,
-        "calificacion":4.5,
+        "nombre":"Mate Imperial",
+        "img":ImgImperial,
+        "descrip":"Elaborado con calabazas seleccionadas que tienen una característica en particular: sus paredes son gruesas, porque al ser forradas en cuero ancho, lo harán más pesado, una característica distintiva de este tipo de mate.",
+        "precio": 3500,
+        "cant":100,
+        "color":"#FF0000"
+
     },
     {
         "id":2,
-        "nombre":"McDonald's",
-        "img":ImgMcdonalds,
-        "calificacion":3.5,
+        "nombre":"Mate Pampa",
+        "img":ImgPampa,
+        "descrip":"Son los más modernos y también son fáciles de limpiar. Los mates de silicona no fijan bacterias ni gustos, conservan el calor, son  irrompibles y de vaciado fácil. Su punto débil es que al ser flexibles, se complica un poco agarrarlos y a veces se vuelcan, pero es cuestión de acostumbrarse. Pueden encontrarse una gran variedad de colores y diseños.",
+        "precio": 2500,
+        "cant":95,
+        "color":"#FF0000"
     },
     {
         "id":3,
-        "nombre":"Starbucks",
-        "img":ImgStarbucks,
-        "calificacion":4,
-    },
-    {
-        "id":4,
-        "nombre":"Bembos",
-        "img":ImgBembos,
-        "calificacion":3,
-    },
-    {
-        "id":5,
-        "nombre":"Subway",
-        "img":ImgSubway,
-        "calificacion":3.7,
+        "nombre":"Mate Calabaza",
+        "img":ImgCalabaza,
+        "descrip":"Se utiliza la fruta ahuecada como mate, puede aprietarse un poco al cebarlo para darle más sabor cítrico. Con esta combinación se aprovechan las virtudes antioxidantes de la yerba mate y la vitamina C del pomelo, fundamentales para fortalecer nuestras defensas en los meses de otoño e invierno.",
+        "precio": 1500,
+        "cant":15,
+        "color":"#FF0000"
     }
 ]
 
 const getFetch = new Promise((resolve, reject) => {
     setTimeout(() => {
-        resolve(locales)
+        resolve(mates)
         reject(err => console.log(err))
-    }, 3000)
+    }, 2000)
 })
 
 export default getFetch

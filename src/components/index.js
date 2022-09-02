@@ -8,3 +8,4 @@ export { default as ItemCount } from "./itemcount/ItemCount";
 export { default as Cart } from "./cart/Cart";
 export { default as Item } from "./item/Item";
 export { default as ItemList } from "./itemlist/ItemList";
+export { default as ItemDetail } from "./itemdetail/ItemDetail";

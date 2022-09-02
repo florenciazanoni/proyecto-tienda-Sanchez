@@ -1,16 +1,14 @@
-.locales {
+.mates {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
     width: 100%;
     height: 100%;
 }
-/* .titulo{
-    position: absolute;
-    
-}
- */
+
+
+
 .contenedor{
     display: flex;
     flex-direction: column;
@@ -24,19 +22,19 @@
     font-size: 1.5rem;
 
 }
-.locales p {
+.mates p {
     font-family: var(--font-family_text);
     font-size: 1.2rem;
 
 }
-.locales h5 {
+.mates h5 {
     font-family: var(--font-family_text);
     font-size: 1.5rem;
 
 }
 
-.locales img {
-    width: 7rem;
+.mates img {
+    width: 20rem;
     height: auto;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
@@ -47,7 +45,7 @@
     cursor: pointer;
 }
 
-  .locales img:hover, .locales img:focus, .locales img:active {
+  .mates img:hover, .mates img:focus, .mates img:active {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }

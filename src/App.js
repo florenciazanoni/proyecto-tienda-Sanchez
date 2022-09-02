@@ -7,6 +7,7 @@ import {
   Navbar,
   ItemListContainer,
   ItemCount,
+  ItemDetail,
   Cart,
   CartWidget
 } from "./components";
@@ -33,6 +34,7 @@ const App = () => {
         <Navbar />
       </div>
       <ItemListContainer />
+      <ItemDetail/> 
       <ItemCount stock={5} initial={0} onAdd={agregar} />
 {/*       <Cart numeroCarrito={numeroProductos} /> */}
       <Categorias />

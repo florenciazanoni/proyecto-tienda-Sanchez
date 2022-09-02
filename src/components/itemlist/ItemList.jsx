@@ -17,12 +17,12 @@ const ItemList = () => {
   }, []);
   return (
     <div className="contenedor">
-      <p className="titulo">Los mejores restaurantes</p>
+      <p className="titulo">Elegí el mate que más te guste, ¡y esperalo en tu casa!</p>
 
       {loading ? (
         <p>Cargando...</p>
       ) : (
-        <div className="locales">
+        <div className="mates">
           {data.map((data) => (
             <Item key={data.name} data={data} />
           ))}
