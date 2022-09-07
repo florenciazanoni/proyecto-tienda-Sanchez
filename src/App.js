@@ -1,48 +1,43 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
-import { Footer, Blog, Carrusel, Restaurantes, Header } from "./containers";
-import {
-  Categorias,
-  Navbar,
-  ItemListContainer,
-  ItemCount,
-  ItemDetail,
-  Cart,
-  CartWidget
-} from "./components";
+import { Footer, Comprar, Contacto, Nosotros,ItemDetailContainer } from "./containers";
+import { Navbar, ItemListContainer, Cart } from "./components";
 import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
   const [numeroProductos, setNumeroProductos] = useState(0);
 
-
   const agregar = (productos, stock) => {
-    if(productos<=stock){
-      console.log("dentro del carrito", productos);
+    if (productos <= stock) {
       setNumeroProductos(productos);
     }
-
-
   };
-  console.log("numeroProductos", numeroProductos);
 
   return (
-    <div className="App">
-      <div className="gradient__bg">
-        <Header />
-        <Navbar />
+    <BrowserRouter>
+      <div className="App">
+        <div className="gradient__bg">
+          <Navbar />
+        </div>
+        <Routes>
+          <Route path="/" element={<ItemListContainer />} />
+          <Route path="/categoria/:categoria" element={<ItemListContainer />} />
+          <Route
+            path="/item/:id"
+            element={<ItemDetailContainer />}
+          />
+          <Route path="/comprar" element={<Comprar />} />
+          <Route path="/nosotros" element={<Nosotros />} />
+          <Route path="/contacto" element={<Contacto />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="*" element={<p>¡No hay nada por acá!</p>} />
+
+        </Routes>
+        <Footer />
       </div>
-      <ItemListContainer />
-      <ItemDetail/> 
-      <ItemCount stock={5} initial={0} onAdd={agregar} />
-{/*       <Cart numeroCarrito={numeroProductos} /> */}
-      <Categorias />
-      <Carrusel />
-      <Restaurantes />
-      <Blog />
-      <Footer />
-    </div>
+    </BrowserRouter>
   );
 };
 

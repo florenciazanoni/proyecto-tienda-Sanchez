@@ -1,9 +1,10 @@
 import React from "react";
-import {useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 import "./navbar.css";
 import CartWidget from "../cartwidget/CartWidget";
 import ItemCount from "../itemcount/ItemCount";
 import ImgLogo from "../../assets/imgs/mate.png";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [estadoCarrito, setEstadoCarrito] = useState("Carrito vacio");
@@ -19,43 +20,74 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbar-links">
-        <div className="navbar-logo">
-          <img src={ImgLogo} className="imagen" ></img>
+        <NavLink to="/" className="navbar-logo">
+          <img src={ImgLogo} className="imagen"></img>
           <h1 className="logo">DANMA</h1>
-        </div>
+        </NavLink>
         <div className="navbar-links_container">
-          <div className="card">
-            <p>
-              <a href="#home">
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "classActive" : "classInactive"
+            }
+            to="/"
+          >
+            <div className="card">
+              <p>
                 <span className="navbar_text">Inicio</span>
-              </a>
-            </p>
-          </div>
-          <div className="card">
-            <p>
-              <a href="#mates">
-                <span className="navbar_text">Nuestros mates</span>
-              </a>
-            </p>
-          </div>
-          <div className="card">
-            <p>
-              <a href="#comprar">
+              </p>
+            </div>
+          </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "classActive" : "classInactive"
+            }
+            to="/categoria/Novedades"
+          >
+            <div className="card">
+              <p>
+                <span className="navbar_text">Novedades</span>
+              </p>
+            </div>
+          </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "classActive" : "classInactive"
+            }
+            to="/comprar"
+          >
+            <div className="card">
+              <p>
                 <span className="navbar_text">¿Cómo comprar?</span>
-              </a>
-            </p>
-          </div>
-          <div className="card">
-            <p>
-              <a href="#nosotros">
+              </p>
+            </div>
+          </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "classActive" : "classInactive"
+            }
+            to="/nosotros"
+          >
+            <div className="card">
+              <p>
                 <span className="navbar_text">Nosotros</span>
-              </a>
-            </p>
-          </div>
+              </p>
+            </div>
+          </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "classActive" : "classInactive"
+            }
+            to="/contacto"
+          >
+            <div className="card">
+              <p>
+                <span className="navbar_text">Contacto</span>
+              </p>
+            </div>
+          </NavLink>
         </div>
         <div className="navbar-cartwidget">
-            <CartWidget numeroCarrito={numeroProd}/>
-
+          <CartWidget numeroCarrito={numeroProd} />
         </div>
       </div>
     </div>

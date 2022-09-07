@@ -4,12 +4,27 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin:2rem 5rem 2rem 5rem ;
+    margin:2rem 2rem 2rem 2rem ;
     cursor: pointer;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
 }
 
 .mates-indiv img{
     margin-bottom: 1rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+
+
+.mates-indiv:hover,
+.mates-indiv:focus,
+.mates-indiv:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 

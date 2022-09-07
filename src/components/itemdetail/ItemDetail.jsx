@@ -1,18 +1,22 @@
 import { useEffect, useState } from "react";
 import getFetch from "../../helper/helper.js";
 import "./itemdetail.css";
+import { useParams } from "react-router-dom";
 
 const ItemDetail = () => {
+    const { id } = useParams();
     const [data,setData] = useState([]);
     const [loading, setLoading] = useState(true);
+
+
     const {nombre, img, descrip, precio} = data;
+    
     useEffect(()=>{
         getFetch.then(response =>{
-            setData(response.find(prod => prod.id === 1));
+            setData(response.find(prod => prod.id === parseInt(id)));
             setLoading(false);
         })
-    },  [])
-    console.log(data);
+    },  [id])
 
     return(
         <div className="contenedor">
@@ -24,7 +28,7 @@ const ItemDetail = () => {
 
                 <img src={data.img} alt="" />
                 <h2>{data.nombre}</h2>
-                <h3>{data.precio}</h3>
+                <h3>${data.precio}</h3>
 
             <div className="detalle">
                     <h4>{data.cant}</h4>

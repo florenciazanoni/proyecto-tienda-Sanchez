@@ -4,8 +4,7 @@ import ItemDetail from "../../components/itemdetail/ItemDetail";
 const ItemDetailContainer = () => {
   return (
     <div>
-      <ItemDetailContainer />
-      
+      <ItemDetail />
     </div>
   );
 };

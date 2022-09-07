@@ -27,7 +27,7 @@
 
 .imagen {
     height: 5rem;
-    width:  5rem;
+    width: 5rem;
     position: relative;
     transform: rotate(15deg);
     z-index: 1;
@@ -39,24 +39,26 @@
 
 }
 
-  .imagen:hover, .imagen:focus, .imagen:active {
+.imagen:hover,
+.imagen:focus,
+.imagen:active {
     -webkit-transform: scale(1.1) rotate(-15deg);
     transform: scale(1.1) rotate(-15deg);
-  }
+}
 
 .logo {
     font-family: var(--font-family);
     font-size: 1.8rem;
     font-weight: 400;
     color: rgb(255, 255, 255);
-	-webkit-text-stroke-width: 1.2px;
+    -webkit-text-stroke-width: 1.2px;
     -webkit-text-stroke-color: black;
     text-decoration: none;
     z-index: 1;
     position: absolute;
 
     margin-top: 1.5rem;
-/*     transform: rotate(35deg); */
+    /*     transform: rotate(35deg); */
     -webkit-user-select: none;
     -moz-user-select: -moz-none;
     -ms-user-select: none;
@@ -91,12 +93,14 @@
     cursor: pointer;
 }
 
-  .card:hover, .card:focus, .card:active {
+.card:hover,
+.card:focus,
+.card:active {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-  }
+}
 
-  
+
 
 .navbar-user {
     display: flex;
@@ -128,6 +132,30 @@
     font-size: 1.1rem;
 }
 
-.navbar-cartwidget{
+.navbar-cartwidget {
     margin-left: 2.5rem;
 }
+
+
+.classActive {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+}
+
+.classActive:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    border-style: solid;
+    left: calc(50% - 10px);
+    bottom: 10px;
+    border-width: 10px 10px 0 10px;
+    border-color: #e1baba transparent transparent transparent;
+
+}
+
