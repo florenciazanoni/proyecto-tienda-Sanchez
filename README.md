@@ -20,11 +20,3 @@ yes, they're both me :)
 
 Any additional information goes here
 
-## Palette used
-
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Background | ![#fffefb](https://via.placeholder.com/10/fffefb?text=+) #fffefb |
-| Footer  | ![#03071E](https://via.placeholder.com/10/03071E?text=+) #03071E |
-| Main Accent | ![#D00000](https://via.placeholder.com/10/D00000?text=+) #D00000 |
-| Details | ![#DC2F02](https://via.placeholder.com/10/DC2F02?text=+) #DC2F02 |

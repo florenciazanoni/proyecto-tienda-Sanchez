@@ -31,10 +31,10 @@ const ItemDetail = () => {
             <img src={data.img} alt="" />
           </div>
           <div className="contenedor-detalles">
-            <h2>{data.nombre}</h2>
+            <h2 className="underline">{data.nombre}</h2>
             <div className="detalle">
               <h3>${data.precio}</h3>
-              <h4>Cantidad disponible: {data.cant}</h4>
+      {/*         <h4>Cantidad disponible: {data.cant}</h4> */}
               <DropDown></DropDown>
 {/*               <p>{data.color}</p> */}
               <BtnCarrito></BtnCarrito>
