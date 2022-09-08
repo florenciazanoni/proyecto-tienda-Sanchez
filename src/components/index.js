@@ -7,3 +7,6 @@ export { default as Cart } from "./cart/Cart";
 export { default as Item } from "./item/Item";
 export { default as ItemList } from "./itemlist/ItemList";
 export { default as ItemDetail } from "./itemdetail/ItemDetail";
+export { default as DropDown } from "./dropdown/DropDown.jsx";
+export { default as BtnCarrito } from "./btncarrito/BtnCarrito.jsx";
+

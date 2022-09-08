@@ -7,7 +7,7 @@ const Item = ({ data }) => {
   return (
     <NavLink to={`/item/${data.id}`} className="mates-indiv" key={data.name}>
       {" "}
-      <img src={img} alt=""></img>
+      <img src={img} alt="" className="imagen-mate"></img>
       <h5>{nombre}<br></br>${precio}</h5>
 
     </NavLink>

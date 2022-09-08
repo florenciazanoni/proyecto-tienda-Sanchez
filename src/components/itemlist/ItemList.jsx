@@ -1,9 +1,9 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import getFetch from "../../helper/helper.js";
-import Item from "../item/Item";
+import { Item } from "../index.js";
 import "./itemlist.css";
-import { Link, useParams } from "react-router-dom";
 
 const ItemList = () => {
   const { categoria } = useParams();
@@ -13,13 +13,13 @@ const ItemList = () => {
   useEffect(() => {
     getFetch.then((data) => {
       if (!categoria) {
-
         setData(data);
       } else {
-        const nuevaLista = data.filter((mates) => categoria === mates.categoria);
+        const nuevaLista = data.filter(
+          (mates) => categoria === mates.categoria
+        );
 
         setData(nuevaLista);
-
       }
       setLoading(false);
     });
@@ -27,23 +27,16 @@ const ItemList = () => {
   return (
     <div className="contenedor">
       <p className="titulo">
-        Elegí el mate que más te guste, ¡y esperalo en tu casa!
+        Elegí el mate que más te guste, <div className="underline"> ¡y esperalo en tu casa!</div>
       </p>
 
       {loading ? (
         <p>Cargando...</p>
       ) : (
         <div className="mates">
-          {data.map(
-            (data) => (
-
-              (
-               // <Link key={data.id} to={`/item/${data.id}`}>
-                  <Item data={data} />
-              //  </Link>
-              )
-            )
-          )}
+          {data.map((data) => (
+            <Item data={data} />
+          ))}
         </div>
       )}
     </div>

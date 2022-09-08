@@ -51,8 +51,8 @@
     font-size: 1.8rem;
     font-weight: 400;
     color: rgb(255, 255, 255);
-    -webkit-text-stroke-width: 1.2px;
-    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: var(--color-subtext);
     text-decoration: none;
     z-index: 1;
     position: absolute;
@@ -155,7 +155,7 @@
     left: calc(50% - 10px);
     bottom: 10px;
     border-width: 10px 10px 0 10px;
-    border-color: #e1baba transparent transparent transparent;
+    border-color: var(--color-detail) transparent transparent transparent;
 
 }
 

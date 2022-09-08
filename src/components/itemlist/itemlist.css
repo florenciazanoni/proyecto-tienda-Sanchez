@@ -38,7 +38,9 @@
 }
 
 .mates img {
-    width: 20rem;
+    border: 2px solid black;
+    border-radius: 15%;
+    width: 15rem;
     height: auto;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
@@ -48,7 +50,9 @@
     transition-property: transform;
     cursor: pointer;
     filter: brightness(0.8) opacity(0.8);
+
 }
+
 
 .mates img:hover,
 .mates img:focus,
@@ -56,3 +60,23 @@
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
+
+
+
+
+.underline {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, var(--color-detail), var(--color-detail));
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    animation: underline 2s ease-in-out 2.5s 1 normal forwards; 
+  }
+  @keyframes underline {
+    to {
+      background-size: 100% 2px;
+    }
+  }

@@ -1,0 +1,32 @@
+/* inspired form gumroad website */
+.button {
+    --bg: var(--color-red);
+    --hover-bg: var(--color-red);
+    --hover-text: var(--color-bg);
+    color: var(--color-footer);
+    border: 1px solid var(--bg);
+    border-radius: 4px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    font-family: var(--font-family_text) ;
+  }
+  
+  .button:hover {
+    color: var(--hover-text);
+    -webkit-transform: translate(-0.25rem,-0.25rem);
+        -ms-transform: translate(-0.25rem,-0.25rem);
+            transform: translate(-0.25rem,-0.25rem);
+    background: var(--color-footer);
+    -webkit-box-shadow: 0.25rem 0.25rem var(--bg);
+            box-shadow: 0.25rem 0.25rem var(--bg);
+  }
+  
+  .button:active {
+    -webkit-transform: translate(0);
+        -ms-transform: translate(0);
+            transform: translate(0);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
