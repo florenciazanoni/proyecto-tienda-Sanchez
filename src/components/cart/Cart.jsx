@@ -1,13 +1,12 @@
 import React from 'react'
 import './cart.css'
 
-const Cart = ({numeroCarrito})=>{
+const Cart = ()=>{
   return(
-      <div style={{background:'pink', color:'black'}}>
-          carrito:
-          <span>{numeroCarrito}</span>
+      <div >
+Carrito
       </div>
   )
 }
 
-export default Cart
+export default Cart 

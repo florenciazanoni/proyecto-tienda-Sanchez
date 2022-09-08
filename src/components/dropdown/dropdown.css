@@ -8,7 +8,7 @@
   }
   
 .nombre {
-  font-size: large;
+  font-size: 1rem;
     margin: 0 0;
     color: var(--color-subtext);
   }
@@ -16,10 +16,12 @@
   
   ul {
     list-style: none;
-    padding: 1rem 1rem 1rem 0;
+    padding: 0 0.5rem 0 0;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 1rem;
+    grid-template-columns: repeat(6, 0.5fr);
+    grid-gap: 0.5rem;
+    justify-items: center;
+
   }
   
   ul li {

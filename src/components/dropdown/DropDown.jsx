@@ -15,8 +15,8 @@ const DropDown = () => {
   return (
     <div>
       <div className="card-2">
-        <p className="nombre">Colores disponibles</p>
         <ul>
+        <h5 className="nombre">Color:</h5>
           <li className="color-item" id="rojo"></li>
           <li className="color-item" id="azul"></li>
           <li className="color-item" id="verde"></li>

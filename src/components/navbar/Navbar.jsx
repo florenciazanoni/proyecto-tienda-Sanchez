@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import "./navbar.css";
-import {CartWidget, ItemCount} from "../index.js"
+import { CartWidget } from "../index.js";
 import ImgLogo from "../../assets/imgs/mate.png";
 import { NavLink } from "react-router-dom";
 
@@ -31,7 +31,7 @@ const Navbar = () => {
             to="/"
           >
             <div className="card">
-                <p className="navbar_text">Inicio</p>
+              <p className="navbar_text">Inicio</p>
             </div>
           </NavLink>
           <NavLink
@@ -41,7 +41,7 @@ const Navbar = () => {
             to="/categoria/Novedades"
           >
             <div className="card">
-                <p className="navbar_text">Novedades</p>
+              <p className="navbar_text">Novedades</p>
             </div>
           </NavLink>
           <NavLink
@@ -51,9 +51,7 @@ const Navbar = () => {
             to="/comprar"
           >
             <div className="card">
-
-                <p className="navbar_text">¿Cómo comprar?</p>
-
+              <p className="navbar_text">¿Cómo comprar?</p>
             </div>
           </NavLink>
           <NavLink
@@ -63,9 +61,7 @@ const Navbar = () => {
             to="/nosotros"
           >
             <div className="card">
-
-                <p className="navbar_text">Nosotros</p>
-
+              <p className="navbar_text">Nosotros</p>
             </div>
           </NavLink>
           <NavLink
@@ -75,13 +71,12 @@ const Navbar = () => {
             to="/contacto"
           >
             <div className="card">
-                <p className="navbar_text">Contacto</p>
-
+              <p className="navbar_text">Contacto</p>
             </div>
           </NavLink>
         </div>
         <div className="navbar-cartwidget">
-          <CartWidget numeroCarrito={numeroProd} />
+          <CartWidget ></CartWidget>
         </div>
       </div>
     </div>

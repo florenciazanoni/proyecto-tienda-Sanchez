@@ -3,8 +3,6 @@ import getFetch from "../../helper/helper.js";
 import { useParams } from "react-router-dom";
 import DropDown from "../dropdown/DropDown.jsx";
 import BtnCarrito from "../btncarrito/BtnCarrito.jsx";
-/*  import DropDown from "./components/dropdown/DropDown.jsx"; */
-/*  import  BtnCarrito from "./components/BtnCarrito"; */
 import "./itemdetail.css";
 
 const ItemDetail = () => {
@@ -34,10 +32,10 @@ const ItemDetail = () => {
             <h2 className="underline">{data.nombre}</h2>
             <div className="detalle">
               <h3>${data.precio}</h3>
-      {/*         <h4>Cantidad disponible: {data.cant}</h4> */}
               <DropDown></DropDown>
 {/*               <p>{data.color}</p> */}
               <BtnCarrito></BtnCarrito>
+              <h4 className="stockStyle">Stock disponible: {data.cant}</h4>
             </div>
             <div className="descrip">
               <p>{data.descrip}</p>
