@@ -17,7 +17,7 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <div className="App">
+      <span className="App">
         <div className="gradient__bg">
           <Navbar />
         </div>
@@ -36,7 +36,7 @@ const App = () => {
 
         </Routes>
         <Footer />
-      </div>
+      </span>
     </BrowserRouter>
   );
 };

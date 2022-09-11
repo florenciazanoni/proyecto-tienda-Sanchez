@@ -27,8 +27,9 @@ const ItemList = () => {
   return (
     <div className="contenedor">
       <p className="titulo">
-        Elegí el mate que más te guste, <div className="underline"> ¡y esperalo en tu casa!</div>
+        Elegí el mate que más te guste,{" "}
       </p>
+        <p className="underline"> ¡y esperalo en tu casa!</p>
 
       {loading ? (
         <p>Cargando...</p>

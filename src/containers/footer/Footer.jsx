@@ -3,7 +3,7 @@ import './footer.css'
 
 const Footer = () => {
   return (
-    <div><body>
+    <div>
     <footer>
         <div className="f-item-con">
             <div className="app-info">
@@ -45,7 +45,7 @@ const Footer = () => {
         <div className='cr-con'>Copyright &copy; 2022 | Made by Florencia Sánchez</div>
     </footer>
 
-</body></div>
+</div>
   )
 }
 

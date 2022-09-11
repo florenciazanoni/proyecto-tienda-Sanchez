@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import getFetch from "../../helper/helper.js";
 import { useParams } from "react-router-dom";
 import DropDown from "../dropdown/DropDown.jsx";
-import BtnCarrito from "../btncarrito/BtnCarrito.jsx";
+import ItemCount from "../itemcount/ItemCount.jsx";
+import { Link } from "react-router-dom";
 import "./itemdetail.css";
 
 const ItemDetail = () => {
@@ -33,8 +34,8 @@ const ItemDetail = () => {
             <div className="detalle">
               <h3>${data.precio}</h3>
               <DropDown></DropDown>
-{/*               <p>{data.color}</p> */}
-              <BtnCarrito></BtnCarrito>
+              <ItemCount initial={1} stock={100}></ItemCount>
+              <Link to="/cart"><button className="buttonStyle">Terminar compra</button></Link>
               <h4 className="stockStyle">Stock disponible: {data.cant}</h4>
             </div>
             <div className="descrip">

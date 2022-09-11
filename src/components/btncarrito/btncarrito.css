@@ -1,99 +1,101 @@
 .buttonStyle {
-    --bg: var(--color-red);
-    --hover-bg: var(--color-red);
-    --hover-text: var(--color-bg);
-    color: var(--color-footer);
-    border: 1px solid var(--bg);
-    border-radius: 4px;
-    padding: 0.2rem 0.2rem;
-    background: var(--bg);
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-    font-family: var(--font-family_text) ;
-    font-weight: 600;
-    font-size: 1rem;
-    outline: 0;
-    
-   letter-spacing: .08rem;
-   background-color: white;
-   border-radius: var(radius);
-   position: relative;
-   cursor: pointer;
-    margin: 0.6rem 0.5rem 0 0;
+  --bg: var(--color-red);
+  --hover-bg: var(--color-red);
+  --hover-text: var(--color-bg);
+  color: var(--color-footer);
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+  padding: 0.2rem 0.2rem;
+  background: var(--bg);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-family: var(--font-family_text);
+  font-weight: 600;
+  font-size: 1rem;
+  outline: 0;
 
-  }
-  
-  .buttonStyle:hover {
-    color: var(--hover-text);
-    -webkit-transform: translate(-0.25rem,-0.25rem);
-        -ms-transform: translate(-0.25rem,-0.25rem);
-            transform: translate(-0.25rem,-0.25rem);
-    background: var(--color-footer);
-    -webkit-box-shadow: 0.25rem 0.25rem var(--bg);
-            box-shadow: 0.25rem 0.25rem var(--bg);
-  }
-  
-  .buttonStyle:active {
-    -webkit-transform: translate(0);
-        -ms-transform: translate(0);
-            transform: translate(0);
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
+  letter-spacing: .08rem;
+  background-color: white;
+  border-radius: var(radius);
+  position: relative;
+  cursor: pointer;
+  margin: 0.6rem 0.5rem 0 0;
 
-  .buttonStyle-2{
-    --bg: var(--color-red);
-    --hover-bg: var(--color-red);
-    --hover-text: var(--color-bg);
-    color: var(--color-footer);
-    border: none;
-    border-radius: 4px;
-    padding: 0.2rem 0.8rem;
-    background: white;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-    font-family: var(--font-family_text);
-    font-size: 1.25rem;
-    cursor: pointer;
-  }
-  .buttonStyle-2:hover {
-    color: var(--hover-text);
-    -webkit-transform: translate(-0.25rem,-0.25rem);
-        -ms-transform: translate(-0.25rem,-0.25rem);
-            transform: translate(-0.25rem,-0.25rem);
-    background: var(--color-footer);
-    -webkit-box-shadow: 0.25rem 0.25rem var(--bg);
-            box-shadow: 0.25rem 0.25rem var(--bg);
-  }
-  
-  .buttonStyle-2:active {
-    -webkit-transform: translate(0);
-        -ms-transform: translate(0);
-            transform: translate(0);
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
+}
 
-  
-  .contenedorBtns{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0 0;
-  }
-  .contadorStyle{
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-  
-  .contenedorBtn{
-    display: flex;
-    width: fit-content;
-    height:auto;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1rem 0 1rem ;
-/*     letter-spacing: 0.5rem; */
-    margin-top: 0.8rem;
-/*     box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2); */
-  }
+.buttonStyle:hover {
+  color: var(--hover-text);
+  -webkit-transform: translate(-0.25rem, -0.25rem);
+  -ms-transform: translate(-0.25rem, -0.25rem);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--color-footer);
+  -webkit-box-shadow: 0.25rem 0.25rem var(--bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.buttonStyle:active {
+  -webkit-transform: translate(0);
+  -ms-transform: translate(0);
+  transform: translate(0);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.buttonStyle-2 {
+  --bg: var(--color-red);
+  --hover-bg: var(--color-red);
+  --hover-text: var(--color-bg);
+  color: var(--color-footer);
+  border: none;
+  border-radius: 4px;
+  padding: 0.2rem 0.8rem;
+  background: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-family: var(--font-family_text);
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.buttonStyle-2:hover {
+  color: var(--hover-text);
+  -webkit-transform: translate(-0.25rem, -0.25rem);
+  -ms-transform: translate(-0.25rem, -0.25rem);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--color-footer);
+  -webkit-box-shadow: 0.25rem 0.25rem var(--bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.buttonStyle-2:active {
+  -webkit-transform: translate(0);
+  -ms-transform: translate(0);
+  transform: translate(0);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+
+.contenedorBtns {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 0;
+}
+
+.contadorStyle {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.contenedorBtn {
+  display: flex;
+  width: fit-content;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem 0 1rem;
+  /*     letter-spacing: 0.5rem; */
+  margin-top: 0.8rem;
+  /*     box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2); */
+}
