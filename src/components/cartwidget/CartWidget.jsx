@@ -1,13 +1,21 @@
-import React from "react";
+import { useContext, react } from "react";
 import { BsFillCartFill } from "react-icons/bs";
 import "./cartwidget.css";
 import { NavLink } from "react-router-dom";
+import { CartContext } from "../../context/CartContext";
 
-const CartWidget = ({numeroCarrito}) => {
+const CartWidget = ({}) => {
+  const { totalItems, cart } = useContext(CartContext);
   return (
     <div className="cart">
-      <NavLink  to="/cart">
-      <BsFillCartFill /></NavLink>
+      {cart.length > 0 && (
+        <>
+          <NavLink to="/cart">
+            <BsFillCartFill />
+          </NavLink>
+          <span className="numberStyle">{totalItems()}</span>
+        </>
+      )}
     </div>
   );
 };
