@@ -1,8 +1,6 @@
 import React from "react";
-import { useState } from "react";
-
 import { Footer, Contacto, Nosotros,ItemDetailContainer,CartContainer } from "./containers";
-import { Navbar, ItemListContainer, Cart } from "./components";
+import { Navbar, ItemListContainer} from "./components";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {CartProvider} from "./context/CartContext";

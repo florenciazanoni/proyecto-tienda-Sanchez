@@ -1,4 +1,4 @@
-import { useContext, react } from "react";
+import { useContext } from "react";
 import { BsFillCartFill } from "react-icons/bs";
 import "./cartwidget.css";
 import { NavLink } from "react-router-dom";
