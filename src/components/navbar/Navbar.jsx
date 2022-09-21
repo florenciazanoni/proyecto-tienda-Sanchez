@@ -44,16 +44,7 @@ const Navbar = () => {
               <p className="navbar_text">Novedades</p>
             </div>
           </NavLink>
-          <NavLink
-            className={({ isActive }) =>
-              isActive ? "classActive" : "classInactive"
-            }
-            to="/comprar"
-          >
-            <div className="card">
-              <p className="navbar_text">¿Cómo comprar?</p>
-            </div>
-          </NavLink>
+
           <NavLink
             className={({ isActive }) =>
               isActive ? "classActive" : "classInactive"

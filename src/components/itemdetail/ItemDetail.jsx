@@ -1,5 +1,6 @@
 import { useEffect, useState, useContext } from "react";
-import getFetch from "../../helper/helper.js";
+import { db } from "../../utils/firebase.js";
+import {doc,getDoc} from "firebase/firestore";
 import { useParams } from "react-router-dom";
 import DropDown from "../dropdown/DropDown.jsx";
 import ItemCount from "../itemcount/ItemCount.jsx";
@@ -11,29 +12,31 @@ const ItemDetail = () => {
   const { addItem } = useContext(CartContext);
   const { id } = useParams();
   const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
   const [quantity, setQuantity] = useState(0);
 
   const { nombre, img, descrip, precio, cant } = data;
 
   useEffect(() => {
-    getFetch.then((response) => {
-      setData(response.find((prod) => prod.id === parseInt(id)));
-      setLoading(false);
-    });
+    const queryRef =  doc(db, "items", id);
+    getDoc(queryRef).then(response=>{
+      const newDoc = {
+        ...response.data(),
+        id: response.id,
+      }
+      setData(newDoc);
+    }).catch(error=>{
+      console.log(error);
+    })
   }, [id]);
 
   const onAdd = (count) => {
     addItem(data, count);
     setQuantity(count);
-    console.log("onAdd", count);
   };
 
   return (
     <div className="contenedor">
-      {loading ? (
-        <h2>Cargando...</h2>
-      ) : (
+       
         <div className="mates-detalles">
           <div className="contenedor">
             <img src={img} alt="" />
@@ -56,7 +59,7 @@ const ItemDetail = () => {
             </div>
           </div>
         </div>
-      )}
+      
     </div>
   );
 };

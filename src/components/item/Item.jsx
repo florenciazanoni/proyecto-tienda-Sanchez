@@ -2,11 +2,12 @@ import React from "react";
 import "./item.css";
 import { NavLink } from "react-router-dom";
 
-const Item = ({ data }) => {
-  const { nombre, img, precio } = data;
+const Item = ({ item }) => {
+  const { nombre, img, precio } = item;
+  console.log("item", item);
   return (
    
-    <NavLink to={`/item/${data.id}`} className="mates-indiv" key={data.name}>
+    <NavLink to={`/item/${item.id}`} className="mates-indiv" key={item.name}>
       {" "}
       <img src={img} alt="" className="imagen-mate"></img>
       <h5>{nombre}<br></br>${precio}</h5>
