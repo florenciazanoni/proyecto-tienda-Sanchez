@@ -4,7 +4,6 @@ import { NavLink } from "react-router-dom";
 
 const Item = ({ item }) => {
   const { nombre, img, precio } = item;
-  console.log("item", item);
   return (
    
     <NavLink to={`/item/${item.id}`} className="mates-indiv" key={item.name}>

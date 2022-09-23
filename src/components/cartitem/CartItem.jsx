@@ -15,7 +15,7 @@ const CartItem = ({ item }) => {
         <p>Mate {item.nombre}</p>
         <p>Precio unitario: {item.precio}</p>
         <p>Cantidad: {item.quantity}</p>
-        <p>Precio total: {item.totalPrice}</p>
+        <p>Precio por cantidad: {item.totalPrice}</p>
         <button className="buttonStyle" onClick={() => removeItem(item.id)}>
           Eliminar producto
         </button>

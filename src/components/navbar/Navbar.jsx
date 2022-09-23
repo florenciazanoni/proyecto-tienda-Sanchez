@@ -6,16 +6,6 @@ import ImgLogo from "../../assets/imgs/mate.png";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-  const [estadoCarrito, setEstadoCarrito] = useState("Carrito vacio");
-  const [numeroProd, setnumeroProd] = useState(0);
-
-  const agregar = (productos) => {
-    console.log("funcion agregar", productos);
-    setnumeroProd(productos);
-    setEstadoCarrito(`el carrito tiene ${productos}`);
-    console.log("estadoCarrito", estadoCarrito);
-  };
-  console.log("numeroProd", numeroProd);
   return (
     <div className="navbar">
       <div className="navbar-links">
