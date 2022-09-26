@@ -9,10 +9,10 @@ This work was for a Coderhouse React course. It's intended to be a mate shop (tr
 
 yes, they're both me :)
 
-## Deploy
+## Website
 
 You can check out the site here:
-![deploy](https://proyecto-tienda-sanchez-r1j1.vercel.app/)
+[Link to website](https://proyecto-tienda-sanchez-r1j1.vercel.app/)
 
 ## Select a product and add to cart 
 The items are uploaded to firebase and can be dynamically updated. The cart widget will display the number of items inside it. 
