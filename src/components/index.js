@@ -6,7 +6,6 @@ export { default as ItemCount } from "./itemcount/ItemCount";
 export { default as Item } from "./item/Item";
 export { default as ItemList } from "./itemlist/ItemList";
 export { default as ItemDetail } from "./itemdetail/ItemDetail";
-export { default as DropDown } from "./dropdown/DropDown.jsx";
 export { default as BtnCarrito } from "./btncarrito/BtnCarrito.jsx";
 export { default as CartItem } from "./cartitem/CartItem.jsx";
 

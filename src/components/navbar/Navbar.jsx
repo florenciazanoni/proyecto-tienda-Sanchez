@@ -1,5 +1,4 @@
 import React from "react";
-import { useState, useEffect } from "react";
 import "./navbar.css";
 import { CartWidget } from "../index.js";
 import ImgLogo from "../../assets/imgs/mate.png";
@@ -34,27 +33,19 @@ const Navbar = () => {
               <p className="navbar_text">Novedades</p>
             </div>
           </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "classActive" : "classInactive"
+            }
+            to="/categoria/Bombilla"
+          >
+            <div className="card">
+              <p className="navbar_text">Bombillas</p>
+            </div>
+          </NavLink>
 
-          <NavLink
-            className={({ isActive }) =>
-              isActive ? "classActive" : "classInactive"
-            }
-            to="/nosotros"
-          >
-            <div className="card">
-              <p className="navbar_text">Nosotros</p>
-            </div>
-          </NavLink>
-          <NavLink
-            className={({ isActive }) =>
-              isActive ? "classActive" : "classInactive"
-            }
-            to="/contacto"
-          >
-            <div className="card">
-              <p className="navbar_text">Contacto</p>
-            </div>
-          </NavLink>
+          
+
         </div>
         <div className="navbar-cartwidget">
           <CartWidget ></CartWidget>

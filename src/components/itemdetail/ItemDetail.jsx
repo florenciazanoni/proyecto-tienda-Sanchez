@@ -2,7 +2,6 @@ import { useEffect, useState, useContext } from "react";
 import { db } from "../../utils/firebase.js";
 import {doc,getDoc} from "firebase/firestore";
 import { useParams } from "react-router-dom";
-import DropDown from "../dropdown/DropDown.jsx";
 import ItemCount from "../itemcount/ItemCount.jsx";
 import { Link } from "react-router-dom";
 import "./itemdetail.css";
@@ -45,7 +44,6 @@ const ItemDetail = () => {
             <h2 className="underline">{nombre}</h2>
             <div className="detalle">
               <h3>${precio}</h3>
-              <DropDown />
               <ItemCount initial={1} stock={100} onAdd={onAdd} />
               {quantity > 0 && (
                 <Link to="/cart">
